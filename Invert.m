@@ -1,0 +1,13 @@
+close all;
+a = imread('.\lena.jpg');
+subplot(1,3,1);
+imshow(a);
+title('Original(RGB)Image');
+img = rgb2gray(a);
+subplot(1,3,2);
+imshow(img);
+title('Original(Gray)Image');
+b = imcomplement(img);
+subplot(1,3,3);
+imshow(b);
+title('Inverted Image');
